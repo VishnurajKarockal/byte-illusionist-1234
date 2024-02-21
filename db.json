@@ -1,0 +1,26 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Title of the First Post",
+        "posted_by": "John Doe",
+        "image_link": "https://example.com/image1.jpg",
+        "date": "2024-02-21"
+      },
+      {
+        "id": 2,
+        "title": "Title of the Second Post",
+        "posted_by": "Jane Smith",
+        "image_link": "https://example.com/image2.jpg",
+        "date": "2024-02-20"
+      },
+      {
+        "id": 3,
+        "title": "Title of the Third Post",
+        "posted_by": "Alex Johnson",
+        "image_link": "https://example.com/image3.jpg",
+        "date": "2024-02-19"
+      }
+    ]
+  }
+  
