@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Feed from './Components/Feed'
 
 function App() {
   
 
   return (
     <>
-      <div>
-        Facebook
+      <div className='h-screen bg-gray-100 overflow-hidden'>
+        Facebook 
+        <br />
+        <br />
+        These is the Facebook Clone 
+        <div className='flex'>
+          <Feed/>
+        </div>
       </div>
       
     </>

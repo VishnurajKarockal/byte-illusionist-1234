@@ -1,0 +1,4 @@
+// actionTypes.js
+export const SEND_POST_REQUEST = 'SEND_POST_REQUEST';
+export const SEND_POST_SUCCESS = 'SEND_POST_SUCCESS';
+export const SEND_POST_FAILURE = 'SEND_POST_FAILURE';
