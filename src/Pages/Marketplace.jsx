@@ -1,8 +1,11 @@
 import React from 'react'
+import MarketplaceGrid from '../Rohit/MarketplaceGrid'
 
 const Marketplace = () => {
   return (
-    <div>Marketplace</div>
+    <div>
+      <MarketplaceGrid />
+    </div>
   )
 }
 

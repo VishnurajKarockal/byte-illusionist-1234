@@ -1,26 +1,378 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "Title of the First Post",
-        "posted_by": "John Doe",
-        "image_link": "https://example.com/image1.jpg",
-        "date": "2024-02-21"
-      },
-      {
-        "id": 2,
-        "title": "Title of the Second Post",
-        "posted_by": "Jane Smith",
-        "image_link": "https://example.com/image2.jpg",
-        "date": "2024-02-20"
-      },
-      {
-        "id": 3,
-        "title": "Title of the Third Post",
-        "posted_by": "Alex Johnson",
-        "image_link": "https://example.com/image3.jpg",
-        "date": "2024-02-19"
-      }
-    ]
-  }
+  "posts": [
+    {
+      "id": 1,
+      "title": "Title of the First Post",
+      "posted_by": "John Doe",
+      "image_link": "https://example.com/image1.jpg",
+      "date": "2024-02-21"
+    },
+    {
+      "id": 2,
+      "title": "Title of the Second Post",
+      "posted_by": "Jane Smith",
+      "image_link": "https://example.com/image2.jpg",
+      "date": "2024-02-20"
+    },
+    {
+      "id": 3,
+      "title": "Title of the Third Post",
+      "posted_by": "Alex Johnson",
+      "image_link": "https://example.com/image3.jpg",
+      "date": "2024-02-19"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 19.99,
+      "location": "Mumbai",
+      "image": "https://example.com/product1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "price": 29.99,
+      "location": "Delhi",
+      "image": "https://example.com/product2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "price": 39.99,
+      "location": "Bangalore",
+      "image": "https://example.com/product3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "price": 49.99,
+      "location": "Kolkata",
+      "image": "https://example.com/product4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Product 5",
+      "price": 59.99,
+      "location": "Chennai",
+      "image": "https://example.com/product5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Product 6",
+      "price": 69.99,
+      "location": "Hyderabad",
+      "image": "https://example.com/product6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Product 7",
+      "price": 79.99,
+      "location": "Ahmedabad",
+      "image": "https://example.com/product7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Product 8",
+      "price": 89.99,
+      "location": "Pune",
+      "image": "https://example.com/product8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Product 9",
+      "price": 99.99,
+      "location": "Jaipur",
+      "image": "https://example.com/product9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Product 10",
+      "price": 109.99,
+      "location": "Lucknow",
+      "image": "https://example.com/product10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Product 11",
+      "price": 119.99,
+      "location": "Surat",
+      "image": "https://example.com/product11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Product 12",
+      "price": 129.99,
+      "location": "Kanpur",
+      "image": "https://example.com/product12.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Product 13",
+      "price": 139.99,
+      "location": "Nagpur",
+      "image": "https://example.com/product13.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Product 14",
+      "price": 149.99,
+      "location": "Indore",
+      "image": "https://example.com/product14.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Product 15",
+      "price": 159.99,
+      "location": "Thane",
+      "image": "https://example.com/product15.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Product 16",
+      "price": 169.99,
+      "location": "Bhopal",
+      "image": "https://example.com/product16.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Product 17",
+      "price": 179.99,
+      "location": "Visakhapatnam",
+      "image": "https://example.com/product17.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Product 18",
+      "price": 189.99,
+      "location": "Pimpri-Chinchwad",
+      "image": "https://example.com/product18.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Product 19",
+      "price": 199.99,
+      "location": "Patna",
+      "image": "https://example.com/product19.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Product 20",
+      "price": 209.99,
+      "location": "Vadodara",
+      "image": "https://example.com/product20.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Product 21",
+      "price": 219.99,
+      "location": "Ludhiana",
+      "image": "https://example.com/product21.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Product 22",
+      "price": 229.99,
+      "location": "Agra",
+      "image": "https://example.com/product22.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Product 23",
+      "price": 239.99,
+      "location": "Nashik",
+      "image": "https://example.com/product23.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Product 24",
+      "price": 249.99,
+      "location": "Faridabad",
+      "image": "https://example.com/product24.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Product 25",
+      "price": 259.99,
+      "location": "Meerut",
+      "image": "https://example.com/product25.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Product 26",
+      "price": 269.99,
+      "location": "Rajkot",
+      "image": "https://example.com/product26.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Product 27",
+      "price": 279.99,
+      "location": "Kalyan-Dombivali",
+      "image": "https://example.com/product27.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Product 28",
+      "price": 289.99,
+      "location": "Vasai-Virar",
+      "image": "https://example.com/product28.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Product 29",
+      "price": 299.99,
+      "location": "Varanasi",
+      "image": "https://example.com/product29.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Product 30",
+      "price": 309.99,
+      "location": "Srinagar",
+      "image": "https://example.com/product30.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Product 31",
+      "price": 319.99,
+      "location": "Dhanbad",
+      "image": "https://example.com/product31.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Product 32",
+      "price": 329.99,
+      "location": "Amritsar",
+      "image": "https://example.com/product32.jpg"
+    },
+    {
+      "id": 33,
+      "name": "Product 33",
+      "price": 339.99,
+      "location": "Allahabad",
+      "image": "https://example.com/product33.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Product 34",
+      "price": 349.99,
+      "location": "Ranchi",
+      "image": "https://example.com/product34.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Product 35",
+      "price": 359.99,
+      "location": "Howrah",
+      "image": "https://example.com/product35.jpg"
+    },
+    {
+      "id": 36,
+      "name": "Product 36",
+      "price": 369.99,
+      "location": "Jabalpur",
+      "image": "https://example.com/product36.jpg"
+    },
+    {
+      "id": 37,
+      "name": "Product 37",
+      "price": 379.99,
+      "location": "Coimbatore",
+      "image": "https://example.com/product37.jpg"
+    },
+    {
+      "id": 38,
+      "name": "Product 38",
+      "price": 389.99,
+      "location": "Jodhpur",
+      "image": "https://example.com/product38.jpg"
+    },
+    {
+      "id": 39,
+      "name": "Product 39",
+      "price": 399.99,
+      "location": "Guwahati",
+      "image": "https://example.com/product39.jpg"
+    },
+    {
+      "id": 40,
+      "name": "Product 40",
+      "price": 409.99,
+      "location": "Vijayawada",
+      "image": "https://example.com/product40.jpg"
+    },
+    {
+      "id": 41,
+      "name": "Product 41",
+      "price": 419.99,
+      "location": "Madurai",
+      "image": "https://example.com/product41.jpg"
+    },
+    {
+      "id": 42,
+      "name": "Product 42",
+      "price": 429.99,
+      "location": "Raipur",
+      "image": "https://example.com/product42.jpg"
+    },
+    {
+      "id": 43,
+      "name": "Product 43",
+      "price": 439.99,
+      "location": "Kota",
+      "image": "https://example.com/product43.jpg"
+    },
+    {
+      "id": 44,
+      "name": "Product 44",
+      "price": 449.99,
+      "location": "Chandigarh",
+      "image": "https://example.com/product44.jpg"
+    },
+    {
+      "id": 45,
+      "name": "Product 45",
+      "price": 459.99,
+      "location": "Ghaziabad",
+      "image": "https://example.com/product45.jpg"
+    },
+    {
+      "id": 46,
+      "name": "Product 46",
+      "price": 469.99,
+      "location": "Guwahati",
+      "image": "https://example.com/product46.jpg"
+    },
+    {
+      "id": 47,
+      "name": "Product 47",
+      "price": 479.99,
+      "location": "Solapur",
+      "image": "https://example.com/product47.jpg"
+    },
+    {
+      "id": 48,
+      "name": "Product 48",
+      "price": 489.99,
+      "location": "Bhubaneswar",
+      "image": "https://example.com/product48.jpg"
+    },
+    {
+      "id": 49,
+      "name": "Product 49",
+      "price": 499.99,
+      "location": "Amravati",
+      "image": "https://example.com/product49.jpg"
+    },
+    {
+      "id": 50,
+      "name": "Product 50",
+      "price": 509.99,
+      "location": "Noida",
+      "image": "https://example.com/product50.jpg"
+    }
+  ]
+}
   
