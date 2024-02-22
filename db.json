@@ -1,26 +1,49 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "Title of the First Post",
-        "posted_by": "John Doe",
-        "image_link": "https://example.com/image1.jpg",
-        "date": "2024-02-21"
-      },
-      {
-        "id": 2,
-        "title": "Title of the Second Post",
-        "posted_by": "Jane Smith",
-        "image_link": "https://example.com/image2.jpg",
-        "date": "2024-02-20"
-      },
-      {
-        "id": 3,
-        "title": "Title of the Third Post",
-        "posted_by": "Alex Johnson",
-        "image_link": "https://example.com/image3.jpg",
-        "date": "2024-02-19"
-      }
-    ]
-  }
-  
+  "posts": [
+    {
+      "id": "1",
+      "title": "Title of the First Post",
+      "posted_by": "John Doe",
+      "image_link": "https://example.com/image1.jpg",
+      "date": "2024-02-21"
+    },
+    {
+      "id": "2",
+      "title": "Title of the Second Post",
+      "posted_by": "Jane Smith",
+      "image_link": "https://example.com/image2.jpg",
+      "date": "2024-02-20"
+    },
+    {
+      "id": "3",
+      "title": "Title of the Third Post",
+      "posted_by": "Alex Johnson",
+      "image_link": "https://example.com/image3.jpg",
+      "date": "2024-02-19"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "firstName": "abcd",
+      "lastName": "defg",
+      "email": "Sincere@april.biz",
+      "mobile": "1-770-736-8031 x56442",
+      "website": "hildegard.org",
+      "dateOfBirth": "10-04-1999",
+      "gender": "male",
+      "password": "1223455",
+      "t&c": true
+    },
+    {
+      "id": "50b8",
+      "firstName": "vishnuraj",
+      "lastName": "k r",
+      "email": "vishnurajkarockal857@gmail.com",
+      "mobile": "5588447788",
+      "dateOfBirth": "2024-02-07",
+      "gender": "Male",
+      "password": "1234"
+    }
+  ]
+}
