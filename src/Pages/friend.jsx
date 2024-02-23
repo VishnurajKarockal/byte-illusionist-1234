@@ -2,7 +2,6 @@ import "./App.css";
 import { useEffect, useReducer } from "react";
 import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-// import Header from "../../components/header";
 import { friendspage } from "../Redux/Reducers";
 import { getFriendsPageInfos } from "./user";
 import Card from "./Friends_card";
