@@ -41,7 +41,7 @@ import { LOGIN_FAIL, LOGIN_SUCCESS } from "./ActionType";
 //   }
 // };
 
-export const LoginReducer = (state = false, action) => {
+export const LoginReducer = (state = { auth: false }, action) => {
   switch (action.type) {
     case LOGIN_SUCCESS:
       return { auth: true };

@@ -44,6 +44,16 @@
       "dateOfBirth": "2024-02-07",
       "gender": "Male",
       "password": "1234"
+    },
+    {
+      "id": "8bf7",
+      "firstName": "vishnuraj",
+      "lastName": "k r",
+      "email": "vishnurajkarockal@gmail.com",
+      "mobile": "555555555555",
+      "dateOfBirth": "2024-02-20",
+      "gender": "Male",
+      "password": "1234"
     }
   ]
 }
