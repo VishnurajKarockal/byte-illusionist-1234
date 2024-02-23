@@ -1,15 +1,44 @@
 import {EmojiHappyIcon} from '@heroicons/react/outline';
 import {CameraIcon, VideoCameraIcon} from '@heroicons/react/solid';
 import { useRef, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { sendPostRequest, sendPostSuccess, sendPostFailure } from '../Redux/Action';
+import {url} from '../Resources';
+
 
 const InputBox = () => {
     const inputRef = useRef(null);
+    const dispatch = useDispatch();
     const filepickerRef = useRef(null);
     const [imageToPost, setImageToPost] = useState(null);
+
     const sendPost = (e)=> {
         e.preventDefault();
 
         if(!inputRef.current.value) return;
+
+        dispatch(sendPostRequest());
+
+        fetch(`${url}/posts`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            
+        }),
+        })
+        .then(response => {
+            if (!response.ok) {
+            throw new Error('Failed to send post');
+            }
+            dispatch(sendPostSuccess());
+            inputRef.current.value = ''; // Clear input field after successful post
+            removeImage();
+        })
+        .catch(error => {
+            dispatch(sendPostFailure(error.message));
+        });
     };
 
     const addImageToPost = (e)=> {

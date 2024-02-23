@@ -71,7 +71,6 @@ StoryCard.propTypes = {
   name : PropTypes.string.isRequired,
   src : PropTypes.string.isRequired,
   profile : PropTypes.string.isRequired,
-  layout : PropTypes.string.isRequired
 }
 
 export default StoryCard;
