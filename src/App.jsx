@@ -1,16 +1,14 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
-import Friends from "./Pages/friend";
+import './App.css';
+import Friend from './Components/Friend'
 
 function App() {
-  
-
   return (
     <>
       <div>
-        Facebook
+        <Friend/>
       </div>
       
     </>

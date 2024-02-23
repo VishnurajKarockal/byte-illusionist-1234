@@ -4,7 +4,7 @@ import {
   acceptRequest,
   cancelRequest,
   deleteRequest,
-} from "./user";
+} from "../Pages/user";
 
 export default function Card({ userr, type, getData }) {
   const { user } = useSelector((state) => ({ ...state }));

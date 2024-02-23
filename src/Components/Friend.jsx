@@ -1,36 +1,24 @@
-import "./App.css";
-import { useEffect, useReducer } from "react";
-import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import {useSelector, useDispatch} from 'react-redux'
 import { Link, useParams } from "react-router-dom";
-import { friendspage } from "../Redux/Reducers";
-import { getFriendsPageInfos } from "./user";
 import Card from "./Friends_card";
+import { fetchFriends } from "../Redux/Action";
 
-export default function Friends() {
-  const { user } = useSelector((state) => ({ ...state }));
+
+function Friend() {
+  const user = useSelector((state) => state);
+  console.log(user);
   const { type } = useParams();
+  const dispatch= useDispatch();
 
-  const [{ loading, error, data }, dispatch] = useReducer(friendspage, {
-    loading: false,
-    data: {},
-    error: "",
-  });
   useEffect(() => {
-    getData();
-  }, []);
-  const getData = async () => {
-    dispatch({ type: "FRIENDS_REQUEST" });
-    const data = await getFriendsPageInfos(user.token);
-    if (data.status === "ok") {
-      dispatch({ type: "FRIENDS_SUCCESS", payload: data.data });
-    } else {
-      dispatch({ type: "FRIENDS_ERROR", payload: data.data });
-    }
-  };
+    dispatch(fetchFriends(user.token));
+  }, [dispatch, user.token]);
+
+  const { loading, error, data } = useSelector((state) => state.friends);
 
   return (
     <>
-      <Header page="friends" />
       <div className="friends">
         <div className="friends_left">
           <div className="friends_left_header">
@@ -200,3 +188,5 @@ export default function Friends() {
     </>
   );
 }
+
+export default Friend;
