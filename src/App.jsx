@@ -6,13 +6,13 @@ import Friend from './Components/Friend'
 
 function App() {
   return (
-    <>
+    
       <div>
         <Friend/>
        
       </div>
       
-    </>
+    
   )
 }
 
