@@ -21,6 +21,86 @@
         "image_link": "https://example.com/image3.jpg",
         "date": "2024-02-19"
       }
+    ],
+    "user": [
+      {
+        "id": "5b8",
+        "firstName": "vishnuraj",
+        "lastName": "k r",
+        "email": "vishnurajkarockal857@gmail.com",
+        "mobile": "558844778",
+        "dateOfBirth": "2024-02-07",
+        "gender": "Male",
+        "password": "1234"
+      },
+      {
+        "id": "1",
+        "firstName": "Sonali",
+        "lastName": "Burman",
+        "email": "Sincere@april.biz",
+        "mobile": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "dateOfBirth": "10-04-1999",
+        "gender": "Female",
+        "password": "1223455",
+        "t&c": true
+      },
+      {
+        "id": "2",
+        "firstName": "Abc",
+        "lastName": "Kr.",
+        "email": "Sincere@april.biz",
+        "mobile": "1-770-736-8031 x564426",
+        "website": "hildegard.org",
+        "dateOfBirth": "10-04-1999",
+        "gender": "Female",
+        "password": "122345567",
+        "t&c": true
+      },
+      {
+        "id": "3",
+        "firstName": "Xyz",
+        "lastName": "Kr.",
+        "email": "Sincere@april.biz",
+        "mobile": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "dateOfBirth": "10-04-1999",
+        "gender": "male",
+        "password": "1223455",
+        "t&c": true
+      },
+      {
+        "id": "4",
+        "firstName": "abcd",
+        "lastName": "defg",
+        "email": "Sincere@april.biz",
+        "mobile": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "dateOfBirth": "10-04-1999",
+        "gender": "male",
+        "password": "1223455",
+        "t&c": true
+      },
+      {
+        "id": "50b8",
+        "firstName": "vishnuraj",
+        "lastName": "k r",
+        "email": "vishnurajkarockal857@gmail.com",
+        "mobile": "5588447788",
+        "dateOfBirth": "2024-02-07",
+        "gender": "Male",
+        "password": "1234"
+      },
+      {
+        "id": "8bf7",
+        "firstName": "vishnuraj",
+        "lastName": "k r",
+        "email": "vishnurajkarockal@gmail.com",
+        "mobile": "555555555555",
+        "dateOfBirth": "2024-02-20",
+        "gender": "Male",
+        "password": "1234"
+      }
     ]
   }
   
