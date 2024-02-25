@@ -1,40 +1,27 @@
 {
   "posts": [
     {
-<<<<<<< HEAD
       "id": 1,
-=======
-      "id": "1",
->>>>>>> 88db09f839bbb74c4ca8087f1c176aea62e0dda7
       "title": "Title of the First Post",
       "posted_by": "John Doe",
       "image_link": "https://example.com/image1.jpg",
       "date": "2024-02-21"
     },
     {
-<<<<<<< HEAD
       "id": 2,
-=======
-      "id": "2",
->>>>>>> 88db09f839bbb74c4ca8087f1c176aea62e0dda7
       "title": "Title of the Second Post",
       "posted_by": "Jane Smith",
       "image_link": "https://example.com/image2.jpg",
       "date": "2024-02-20"
     },
     {
-<<<<<<< HEAD
       "id": 3,
-=======
-      "id": "3",
->>>>>>> 88db09f839bbb74c4ca8087f1c176aea62e0dda7
       "title": "Title of the Third Post",
       "posted_by": "Alex Johnson",
       "image_link": "https://example.com/image3.jpg",
       "date": "2024-02-19"
     }
   ],
-<<<<<<< HEAD
   "products": [
     {
       "id": 1,
@@ -436,10 +423,7 @@
       "image": "https://scontent.fudr2-2.fna.fbcdn.net/v/t45.5328-4/427520723_7802345093111671_3936302645082124275_n.jpg?stp=c0.4.403.403a_dst-jpg_p403x403&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=bHHbdtAtC10AX-HCx4y&_nc_ht=scontent.fudr2-2.fna&oh=00_AfBzBrR3Ec6LxTPqKjdsNXyr4iYSfa1S6Q5fyCQp-oYf4Q&oe=65DCA655"
       ,"category": "Sports"
     }
-  ]
-}
-  
-=======
+  ],
   "user": [
     {
       "id": "1",
@@ -619,5 +603,8 @@
       "profilepicture": "https://reqres.in/img/faces/3-image.jpg"
     }
   ]
+  
 }
->>>>>>> 88db09f839bbb74c4ca8087f1c176aea62e0dda7
+  
+  
+
