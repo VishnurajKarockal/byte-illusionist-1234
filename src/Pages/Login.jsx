@@ -99,7 +99,7 @@ const Login = () => {
         color={"#2f4e44"}
         boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
         padding={"30px"}
-        width={{ base: "95%", sm: "100%", md: "60%", lg: "40%" }}
+        width={{ base: "95%", sm: "100%", md: "80%", lg: "90%" }}
         borderRadius={"10px"}
         
       >

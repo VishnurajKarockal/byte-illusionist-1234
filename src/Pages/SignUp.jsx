@@ -124,7 +124,7 @@ const SignUp = () => {
         color="#2f4e44"
         boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
         padding={{ base: "20px", lg: "30px" }}
-        width={{ base: "95%", sm: "95%", md: "60%", lg: "40%" }}
+        width={{ base: "95%", sm: "95%", md: "80%", lg: "90%" }}
         borderRadius={"10px"}
       >
         <Text textAlign={"center"} fontSize={"1.7rem"} color={"#0866ff"}>

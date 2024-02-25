@@ -8,7 +8,7 @@ import { Box, ChakraProvider, IconButton, VStack, useDisclosure } from '@chakra-
 import Login from './Pages/Login'
 import { useSelector } from 'react-redux'
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
-import { Link } from 'react-router-dom'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 import AllRoutes from './Routes/AllRoutes'
 import Friends from './Pages/Friends'
 import Navbar from './Pages/Navbar'
@@ -17,6 +17,7 @@ import LandingPage from './Pages/LandingPage'
 function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const isLoggedIn = useSelector((state)=> state.auth.isAuth);
+  const navigate = useNavigate();
   return (
     // <>
     //   <Navbar />
@@ -84,8 +85,7 @@ function App() {
     //     </Box>
     //   </Box>
     // </>
-    <LandingPage />
-    
+    <LandingPage /> 
   )
 }
 

@@ -6,6 +6,7 @@ import AllRoutes from "../Routes/AllRoutes";
 import Friends from "./Friends";
 import Sponsors from "./Sponsors";
 import { mainblue } from "../Resources";
+import Login from "./Login";
 
 
 
@@ -64,6 +65,7 @@ function LandingPage() {
         {/* Center Content */}
         <Box className="center-content" style={{ flex: '1', overflowY: 'auto', }}>
           <AllRoutes />
+          
         </Box>
 
         {/* Right Sidebar (Friends) */}
