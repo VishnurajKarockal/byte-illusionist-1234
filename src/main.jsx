@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { store } from './Redux/Store.js'
 import { Provider } from 'react-redux'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter} from 'react-router-dom'
 
 import { ChakraProvider } from '@chakra-ui/react'
 

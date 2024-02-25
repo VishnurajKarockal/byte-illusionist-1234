@@ -75,7 +75,7 @@ const MarketplaceGrid = () => {
   };
 
   return (
-    <div>
+    <div style={{marginTop:"30px"}}>
       <div>
         <select id="category-select" className="category-select" onChange={(e) => handleSearchCategory(e.target.value)}>
           <option value="">All Categories</option>

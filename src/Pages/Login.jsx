@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import {
   FormControl,
   FormLabel,
@@ -10,29 +10,41 @@ import {
   Text,
   useToast,
 } from "@chakra-ui/react";
-
 import { mainblue, url } from "../Resources";
-
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { LOGGED_IN_USERNAME, LOGIN_FAIL, LOGIN_SUCCESS } from '../Redux/ActionType';
+import { LOGGED_IN_USERNAME, LOGIN_SUCCESS } from '../Redux/ActionType';
 import { useDispatch } from 'react-redux';
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [show, setShow] = React.useState(false);
-  const [userdata,setUserData] = useState([]);
-  const handleClick = () => setShow(!show);
-  const [isCredentialCorrect,setIsCredentialCorrect] = useState(false);
-  const [logintry, setLoginTry] = useState(false);
+  const [show, setShow] = useState(false);
   const toast = useToast();
   const dispatch = useDispatch();
-  // const handleLogin = () => {
-    
-  
-  // }
+  const navigate = useNavigate();
 
-  // Account created toast 
+  const fetchUserData = async () => {
+    try {
+      const res = await axios.get(`${url}/user`);
+      const data = res.data;
+      
+      for (const item of data) {
+        if (item.email === email && item.password === password) {
+          await Promise.all([
+            dispatch({type: LOGIN_SUCCESS}),
+            dispatch({type: LOGGED_IN_USERNAME, payload: item.firstName})
+            
+          ]);
+          navigate("/")
+          AccountCreateToast();
+          break;
+        }
+      }
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+  }
 
   const AccountCreateToast = () => {
     const examplePromise = new Promise((resolve) => {
@@ -49,48 +61,6 @@ const Login = () => {
     });
   }
 
-
-  //  Acoound creation failed toast
-  const accountCreateFail = () => {
-    return toast({
-      title: "Invalid Credentials.",
-      description: "Check all fields ",
-      status: "warning",
-      duration: 1000,
-      isClosable: true,
-    });
-  };
-
-
-
-  const fetchUserData = async () => {
-    setLoginTry(true);
-    try {
-      const res = await axios.get(`${url}/user`);
-      const data = res.data;
-      
-      for (const item of data) {
-        if (item.email === email && item.password === password) {
-          await Promise.all([
-            dispatch({type: LOGIN_SUCCESS}),
-            dispatch({type: LOGGED_IN_USERNAME, payload: item.firstName})
-          ]);
-          AccountCreateToast();
-          break;
-        }
-      }
-
-      // if (!auth.auth) {
-      //   accountCreateFail();
-      // }
-    } catch (error) {
-      console.error("Error fetching user data:", error);
-    }
-  }
-
-
-
-
   return (
     <Box mt={{ base: "2rem" }} mb={{ base: "2rem" }}>
       <Box
@@ -101,7 +71,6 @@ const Login = () => {
         padding={"30px"}
         width={{ base: "95%", sm: "100%", md: "80%", lg: "90%" }}
         borderRadius={"10px"}
-        
       >
         <Text textAlign={"center"} fontSize={"1.7rem"} color={mainblue}>
           LOGIN
@@ -125,12 +94,11 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
             <InputRightElement width="4.5rem">
-              <Button h="1.75rem" size="sm" >
+              <Button h="1.75rem" size="sm" onClick={() => setShow(!show)}>
                 {show ? "Hide" : "Show"}
               </Button>
             </InputRightElement>
           </InputGroup>
-          {/* <Button backgroundColor='#658a71' _hover={{backgroundColor:"#63a677"}} color={"white"} width='full' marginTop={"15px"} onClick={fetchUserData}>SIGN IN</Button> */}
           <Button
             className="font-semibold"
             _hover={{ bg: "#fafaf1", color: "#658a71" }}
@@ -144,12 +112,11 @@ const Login = () => {
             borderColor="#2f4e44"
             onClick={() => fetchUserData()}
             marginTop={"15px"}
-
           >
             Login
           </Button>
 
-          {/* <h1
+          <h1
             style={{
               color: "#658a71",
               marginTop: "0.5rem",
@@ -157,14 +124,16 @@ const Login = () => {
             }}
           >
             Don't have an account?{"   "}{" "}
-            <Link style={{ color: "#2f4e44", fontWeight: "600" }}>
+            <Link style={{ color: "red", fontWeight: "600" }} to={"/signup"}>
               Sign Up
             </Link>
-          </h1> */}
+            
+          </h1>
+          
         </FormControl>
       </Box>
     </Box>
   )
 }
 
-export default Login
+export default Login;
