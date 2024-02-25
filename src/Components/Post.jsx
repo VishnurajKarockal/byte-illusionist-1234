@@ -24,7 +24,7 @@ const Post = ({ id, name, message, postImage, image, timestamp}) => {
   const [showComments, setShowComments] = useState(false);
   const [commentInput, setCommentInput] = useState('');
   const [liked, setLiked] = useState(false);
-  const commentIdCounter = useRef(1);
+  // const commentIdCounter = useRef(1);
 
   const [showPreview, setShowPreview] = useState(false);
 
@@ -33,15 +33,15 @@ const Post = ({ id, name, message, postImage, image, timestamp}) => {
   };
 
   // Fetch likes and comments on component mount
-  useEffect(() => {
-    fetch(`${url}/posts/${id}`)
-      .then(response => response.json())
-      .then(data => {
-        dispatch(fetchCommentsSuccess(data.comments));
-        dispatch(updatePostLikes({ id, likes: data.likes }));
-      })
-      .catch(error => console.error('Error fetching likes and comments:', error));
-  }, [dispatch, id]);
+  // useEffect(() => {
+  //   fetch(`${url}/posts/${id}`)
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       dispatch(fetchCommentsSuccess(data.comments));
+  //       dispatch(updatePostLikes({ id, likes: data.likes }));
+  //     })
+  //     .catch(error => console.error('Error fetching likes and comments:', error));
+  // }, [dispatch, id]);
 
   // Handle like button click
   const handleLike = () => {
@@ -67,31 +67,31 @@ const Post = ({ id, name, message, postImage, image, timestamp}) => {
   };
 
   // Handle adding a new comment
-  const addComment = async () => {
-    try {
-      const response = await fetch(`${url}/posts/${id}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          commentId: commentIdCounter.current++,
-          commentedBy: name,
-          userImage: image,
-          data: commentInput,
-        }),
-      });
-      if (response.ok) {
-        const newComment = await response.json();
-        dispatch(addCommentSuccess(newComment));
-        setCommentInput('');
-      } else {
-        console.error('Failed to add comment');
-      }
-    } catch (error) {
-      console.error('Error adding comment:', error);
-    }
-  };
+  // const addComment = async () => {
+  //   try {
+  //     const response = await fetch(`${url}/posts/${id}`, {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({
+  //         commentId: commentIdCounter.current++,
+  //         commentedBy: name,
+  //         userImage: image,
+  //         data: commentInput,
+  //       }),
+  //     });
+  //     if (response.ok) {
+  //       const newComment = await response.json();
+  //       dispatch(addCommentSuccess(newComment));
+  //       setCommentInput('');
+  //     } else {
+  //       console.error('Failed to add comment');
+  //     }
+  //   } catch (error) {
+  //     console.error('Error adding comment:', error);
+  //   }
+  // };
   
 
   return (
@@ -136,7 +136,7 @@ const Post = ({ id, name, message, postImage, image, timestamp}) => {
       </div>)}
 
       <div className="flex justify-between items-center rounded-b-2xl bg-white shadow-md text-gray-400 border-t">
-        <div className="inputIcon rounded-none rounded-bl-2xl" onClick={handleLike}>
+        <div className="inputIcon rounded-none rounded-bl-2xl">
           <ThumbUpIcon className={`h-6 cursor-pointer ${liked ? 'text-blue-500 animate-pulse' : ''}`} />
           <p className="text-xs sm:text-base">Like</p>
         </div>
@@ -179,7 +179,7 @@ const Post = ({ id, name, message, postImage, image, timestamp}) => {
                 value={commentInput}
                 onChange={e => setCommentInput(e.target.value)}
               />
-              <button className="bg-blue-500 text-white rounded-md px-4 py-2" onClick={addComment}>
+              <button className="bg-blue-500 text-white rounded-md px-4 py-2">
                 Add
               </button>
             </div>

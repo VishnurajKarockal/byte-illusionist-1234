@@ -1,10 +1,16 @@
-import { createStore, applyMiddleware } from 'redux';
-import {thunk} from 'redux-thunk';
-import { rootReducer } from './Reucers';
+import { combineReducers, createStore } from "redux";
+import { LoginReducer } from "./Reucers";
+import friendsReducer from "./friendReducer";
+import sendPostReducer from "./SendPostReducer";
+import PostsReducer from "./PostsReducer";
 
-const store = createStore(
-  rootReducer,
-  applyMiddleware(thunk)
-);
 
-export default store;
+const rootReducers = combineReducers({
+  auth: LoginReducer,
+  friendspage : friendsReducer,
+  sendPost: sendPostReducer,
+  posts : PostsReducer,
+});
+
+export const store = createStore(rootReducers);
+

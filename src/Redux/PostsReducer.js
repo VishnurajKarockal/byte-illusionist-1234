@@ -6,7 +6,7 @@ const initialState = {
   error: null,
 };
 
-const postsReducer = (state = initialState, action) => {
+const PostsReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.FETCH_POSTS_REQUEST:
       return {
@@ -75,4 +75,4 @@ const postsReducer = (state = initialState, action) => {
   }
 };
 
-export default postsReducer;
+export default PostsReducer;
