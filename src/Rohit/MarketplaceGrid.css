@@ -14,7 +14,7 @@ body {
 /* Grid layout */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 20px;
   grid-gap: 20px;
 }
@@ -137,4 +137,22 @@ input[type="text"] {
   .product-location {
     font-size: 12px;
   }
+}
+
+.interested-button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.interested-button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+.interested-button:focus {
+  outline: none;
 }
