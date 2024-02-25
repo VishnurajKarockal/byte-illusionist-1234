@@ -15,7 +15,7 @@ import { mainblue, url } from "../Resources";
 
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { LOGIN_FAIL, LOGIN_SUCCESS } from '../Redux/ActionType';
+import { LOGGED_IN_USERNAME, LOGIN_FAIL, LOGIN_SUCCESS } from '../Redux/ActionType';
 import { useDispatch } from 'react-redux';
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -68,35 +68,24 @@ const Login = () => {
     try {
       const res = await axios.get(`${url}/user`);
       const data = res.data;
-      console.log(data);
-      // let isCredentialCorrect = false;
-      // console.log("fetchData", data);
+      
       for (const item of data) {
         if (item.email === email && item.password === password) {
-          setIsCredentialCorrect(true);
-          // setLogin(true);
-          // setFullname(item.firstName + " " + item.lastName);
-
-          // Dispatch authLinLout(true) and then dispatch setName inside the then block
           await Promise.all([
-            dispatch({type:LOGIN_SUCCESS}),
-            // dispatch(setName(item.firstName + " " + item.lastName)),
+            dispatch({type: LOGIN_SUCCESS}),
+            dispatch({type: LOGGED_IN_USERNAME, payload: item.firstName})
           ]);
           AccountCreateToast();
-          // dispatch({type:LOGIN_FAIL});
-          // history.push("/");
-          // navigate("/");
           break;
         }
       }
 
-      if (!isCredentialCorrect) {
-        accountCreateFail();
-      }
+      // if (!auth.auth) {
+      //   accountCreateFail();
+      // }
     } catch (error) {
       console.error("Error fetching user data:", error);
     }
-    // console.log("ligonCred", isCredentialCorrect);
   }
 
 

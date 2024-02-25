@@ -18,8 +18,6 @@
 //   password: "",
 // };
 
-import { LOGIN_FAIL, LOGIN_SUCCESS } from "./ActionType";
-
 // export const singelUserReducer = (state = initialSingleUserState, action) => {
 //   switch (action.payload) {
 //     case SET_F_NAME:
@@ -41,12 +39,28 @@ import { LOGIN_FAIL, LOGIN_SUCCESS } from "./ActionType";
 //   }
 // };
 
-export const LoginReducer = (state = { auth: false }, action) => {
+import {
+  LOGGED_IN_USERNAME,
+  LOGIN_FAIL,
+  LOGIN_SUCCESS,
+  LOGOUT_USER,
+} from "./ActionType";
+
+const initialUserDataState = {
+  isAuth: false,
+  username: "",
+};
+
+export const LoginReducer = (state = initialUserDataState, action) => {
   switch (action.type) {
     case LOGIN_SUCCESS:
-      return { auth: true };
+      return { ...state, isAuth: true };
+    case LOGGED_IN_USERNAME:
+      return { ...state, username: action.payload };
     case LOGIN_FAIL:
-      return { auth: false };
+      return { ...state, isAuth: false };
+    case LOGOUT_USER:
+      return { ...state, isAuth: false, username: "" };
     default:
       return state;
   }
