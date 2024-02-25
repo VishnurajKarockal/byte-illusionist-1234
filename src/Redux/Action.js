@@ -31,3 +31,18 @@ export const fetchPostsRequest = () => ({
     type: types.FETCH_POSTS_FAILURE,
     payload: error,
   });
+
+  export const updatePostLikes = (post) => ({
+    type: types.UPDATE_POST_LIKES,
+    payload: post,
+  });
+
+  export const fetchCommentsSuccess = (comments) => ({
+    type: types.FETCH_COMMENTS_SUCCESS,
+    payload: comments,
+  });
+  
+  export const addCommentSuccess = (comment) => ({
+    type: types.ADD_COMMENT_SUCCESS,
+    payload: comment,
+  });

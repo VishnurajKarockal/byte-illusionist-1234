@@ -2,33 +2,33 @@ import StoryCard from "./StoryCard";
 
 const stories = [
     {
-        name: "Sonny Sangha",
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPOL2tTs-_CnTS_LmX7gK09ZreYo_6Fc8RyhDwk_QaaQ&s",
-        profile:"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDHX26rINXKfhQWquGJ6hgmebfW2KJKHQhmxZ1fqv5pr37wlFs",
+        name: "Revanth",
+        src: "https://templates.joomla-monster.com/joomla30/jm-news-portal/components/com_djclassifieds/assets/images/default_profile.png",
+        profile:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS4U9_dRq2keilvghDPN9IrXOTbKAcCb8mAlJayZqw&s",
     },
 
     {
-        name: "Elon Musk" ,
+        name: "Rohith" ,
         src: "https://templates.joomla-monster.com/joomla30/jm-news-portal/components/com_djclassifieds/assets/images/default_profile.png",
-        profile: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDHX26rINXKfhQWquGJ6hgmebfW2KJKHQhmxZ1fqv5pr37wlFs",
+        profile: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS4U9_dRq2keilvghDPN9IrXOTbKAcCb8mAlJayZqw&s",
     },
 
     {
-        name: "Jeff Bezoz",
+        name: "Vishnu",
         src: "https://templates.joomla-monster.com/joomla30/jm-news-portal/components/com_djclassifieds/assets/images/default_profile.png",
-        profile: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDHX26rINXKfhQWquGJ6hgmebfW2KJKHQhmxZ1fqv5pr37wlFs",
+        profile: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS4U9_dRq2keilvghDPN9IrXOTbKAcCb8mAlJayZqw&s",
     },
 
     {
-        name: "Mark Zuckerberg",
+        name: "khundan",
         src: "https://templates.joomla-monster.com/joomla30/jm-news-portal/components/com_djclassifieds/assets/images/default_profile.png",
-        profile: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDHX26rINXKfhQWquGJ6hgmebfW2KJKHQhmxZ1fqv5pr37wlFs" ,
+        profile: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS4U9_dRq2keilvghDPN9IrXOTbKAcCb8mAlJayZqw&s" ,
     },
 
     {
-        name: "Bill Gates",
+        name: "sonali",
         src: "https://templates.joomla-monster.com/joomla30/jm-news-portal/components/com_djclassifieds/assets/images/default_profile.png",
-        profile: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDHX26rINXKfhQWquGJ6hgmebfW2KJKHQhmxZ1fqv5pr37wlFs" 
+        profile: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS4U9_dRq2keilvghDPN9IrXOTbKAcCb8mAlJayZqw&s" 
     }
 ]
 

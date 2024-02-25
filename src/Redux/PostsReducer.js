@@ -26,6 +26,50 @@ const postsReducer = (state = initialState, action) => {
         loading: false,
         error: action.payload,
       };
+    case types.FETCH_COMMENTS_SUCCESS:
+      return {
+        ...state,
+        posts: state.posts.map(post => {
+          if (post.id === action.payload.postId) {
+            return {
+              ...post,
+              comments: action.payload.comments,
+            };
+          }
+          return post;
+        }),
+      };
+    case types.ADD_COMMENT_SUCCESS:
+      return {
+        ...state,
+        posts: state.posts.map(post => {
+          if (post.id === action.payload.postId) {
+            return {
+              ...post,
+              comments: [...post.comments, action.payload.comment],
+            };
+          }
+          return post;
+        }),
+      };
+    case types.UPDATE_POST_LIKES:
+      return {
+        ...state,
+        posts: state.posts.map(post => {
+          if (post.id === action.payload.id) {
+            return {
+              ...post,
+              likes: action.payload.likes,
+            };
+          }
+          return post;
+        }),
+      };
+    case types.SET_USER:
+      return {
+        ...state,
+        user: action.payload,
+      };
     default:
       return state;
   }
