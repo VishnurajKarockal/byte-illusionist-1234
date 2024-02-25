@@ -1,121 +1,26 @@
 {
-  "posts": [
-    {
-      "id": "1",
-      "title": "Title of the First Post",
-      "posted_by": "John Doe",
-      "image_link": "https://example.com/image1.jpg",
-      "date": "2024-02-21"
-    },
-    {
-      "id": "2",
-      "title": "Title of the Second Post",
-      "posted_by": "Jane Smith",
-      "image_link": "https://example.com/image2.jpg",
-      "date": "2024-02-20"
-    },
-    {
-      "id": "3",
-      "title": "Title of the Third Post",
-      "posted_by": "Alex Johnson",
-      "image_link": "https://example.com/image3.jpg",
-      "date": "2024-02-19"
-    }
-  ],
-  "user": [
-    {
-      "id": "1",
-      "firstName": "abcd",
-      "lastName": "defg",
-      "email": "Sincere@april.biz",
-      "mobile": "1-770-736-8031 x56442",
-      "website": "hildegard.org",
-      "dateOfBirth": "10-04-1999",
-      "gender": "male",
-      "password": "1223455",
-      "t&c": true
-    },
-    {
-      "id": "50b8",
-      "firstName": "vishnuraj",
-      "lastName": "k r",
-      "email": "vishnurajkarockal857@gmail.com",
-      "mobile": "5588447788",
-      "dateOfBirth": "2024-02-07",
-      "gender": "Male",
-      "password": "1234"
-    },
-    {
-      "id": "8bf7",
-      "firstName": "vishnuraj",
-      "lastName": "k r",
-      "email": "vishnurajkarockal@gmail.com",
-      "mobile": "555555555555",
-      "dateOfBirth": "2024-02-20",
-      "gender": "Male",
-      "password": "1234"
-    }
-  ],
-  "sponsors": [
-    {
-      "id": 1,
-      "sponsor_name": "ABC Corporation",
-      "sponsor_image": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202303/rillogo-1599718487_0-sixteen_nine.jpg?size=948:533",
-      "sponsor_type": "service"
-    },
-    {
-      "id": 2,
-      "sponsor_name": "TCS",
-      "sponsor_image": "https://etimg.etb2bimg.com/photo/93098511.cms",
-      "sponsor_type": "Tech"
-    },
-    {
-      "id": 3,
-      "sponsor_name": "Tech Solutions Inc.",
-      "sponsor_image": "https://bsmedia.business-standard.com/_media/bs/img/article/2018-10/23/full/1540299206-3916.jpg",
-      "sponsor_type": "service"
-    },
-    {
-      "id": 4,
-      "sponsor_name": "City Health Clinic",
-      "sponsor_image": "https://tradebrains.in/wp-content/uploads/2022/02/BAJAJ-Finance-vs-BAJAJ-Finserv-Cover-Image-1080x675-1-1.png",
-      "sponsor_type": "service"
-    },
-    {
-      "id": 5,
-      "sponsor_name": "Global Advertising Agency",
-      "sponsor_image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWCZER?ver=1433&q=90&m=6&h=195&w=348&b=%23FFFFFFFF&l=f&o=t&aim=true",
-      "sponsor_type": "advertisement"
-    },
-    {
-      "id": 6,
-      "sponsor_name": "ABC Corporation",
-      "sponsor_image": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202303/rillogo-1599718487_0-sixteen_nine.jpg?size=948:533",
-      "sponsor_type": "service"
-    },
-    {
-      "id": 7,
-      "sponsor_name": "TCS",
-      "sponsor_image": "https://etimg.etb2bimg.com/photo/93098511.cms",
-      "sponsor_type": "Tech"
-    },
-    {
-      "id": 8,
-      "sponsor_name": "Tech Solutions Inc.",
-      "sponsor_image": "https://bsmedia.business-standard.com/_media/bs/img/article/2018-10/23/full/1540299206-3916.jpg",
-      "sponsor_type": "service"
-    },
-    {
-      "id": 9,
-      "sponsor_name": "City Health Clinic",
-      "sponsor_image": "https://tradebrains.in/wp-content/uploads/2022/02/BAJAJ-Finance-vs-BAJAJ-Finserv-Cover-Image-1080x675-1-1.png",
-      "sponsor_type": "service"
-    },
-    {
-      "id": 10,
-      "sponsor_name": "Global Advertising Agency",
-      "sponsor_image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWCZER?ver=1433&q=90&m=6&h=195&w=348&b=%23FFFFFFFF&l=f&o=t&aim=true",
-      "sponsor_type": "advertisement"
-    }
-  ]
-}
+    "posts": [
+      {
+        "id": 1,
+        "title": "Title of the First Post",
+        "posted_by": "John Doe",
+        "image_link": "https://example.com/image1.jpg",
+        "date": "2024-02-21"
+      },
+      {
+        "id": 2,
+        "title": "Title of the Second Post",
+        "posted_by": "Jane Smith",
+        "image_link": "https://example.com/image2.jpg",
+        "date": "2024-02-20"
+      },
+      {
+        "id": 3,
+        "title": "Title of the Third Post",
+        "posted_by": "Alex Johnson",
+        "image_link": "https://example.com/image3.jpg",
+        "date": "2024-02-19"
+      }
+    ]
+  }
+  
