@@ -21,12 +21,9 @@
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.0",
     "react-router-dom": "^6.22.1",
-<<<<<<< HEAD
     "redux": "^5.0.1",
     "redux-thunk": "^3.1.0"
-=======
-    "redux": "^5.0.1"
->>>>>>> cae2ab4e0cd345bc8676078afaff72ddcd8c6bf0
+
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
