@@ -1,9 +1,11 @@
-import React from 'react'
+import Feed from '../Components/Feed'
 
 const Posts = () => {
   return (
-    <div>Paskhahsfjanlnosts
-      
+    <div className='h-screen bg-gray-100 overflow-hidden'>
+        <div className='flex'>
+          <Feed/>
+        </div>
     </div>
   )
 }

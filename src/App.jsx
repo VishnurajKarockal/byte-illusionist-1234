@@ -1,23 +1,23 @@
 
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import SignUp from './Pages/SignUp'
-import { Box, ChakraProvider, IconButton, VStack, useDisclosure } from '@chakra-ui/react'
-import Login from './Pages/Login'
-import { useSelector } from 'react-redux'
-import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
-import AllRoutes from './Routes/AllRoutes'
-import Friends from './Pages/Friends'
-import Navbar from './Pages/Navbar'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+// import SignUp from './Pages/SignUp'
+// import { Box, ChakraProvider, IconButton, VStack, useDisclosure } from '@chakra-ui/react'
+// import Login from './Pages/Login'
+// import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
+// import { Link, Navigate, useNavigate } from 'react-router-dom'
+// import AllRoutes from './Routes/AllRoutes'
+// import Friends from './Pages/Friends'
+// import Navbar from './Pages/Navbar'
+
 import LandingPage from './Pages/LandingPage'
+import './App.css'
 
 function App() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const isLoggedIn = useSelector((state)=> state.auth.isAuth);
-  const navigate = useNavigate();
+  // const { isOpen, onOpen, onClose } = useDisclosure();
+  // const isLoggedIn = useSelector((state)=> state.auth.isAuth);
+  // const navigate = useNavigate();
   return (
     // <>
     //   <Navbar />
