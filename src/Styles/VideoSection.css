@@ -1,0 +1,46 @@
+.MainContainer{
+  width: 90%;
+  padding-top: 5%;
+  height: auto;
+  margin: auto;
+}
+.video-item{
+  width: 95%;
+  height: auto;
+  background-color: aliceblue;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  border-radius: 10px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.btn{
+  background-color: transparent;
+  height: 35px;
+  color: black;
+  margin-bottom: 4px;
+  border: none;
+  padding: 15px;
+}
+.username{
+  display: flex;
+  height: auto;
+  padding-top: 8px;
+  gap: 5px;
+  margin-left: 4%;
+  margin-bottom: 0%;
+}
+
+.description{
+  height: auto;
+  margin-left: 5%;
+  margin-bottom: 4px;
+  text-align: start;
+}
+
+.btn:hover{
+  background-color: rgba(203, 200, 200, 0.461);
+}
+
