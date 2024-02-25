@@ -95,7 +95,7 @@ export const Videos = () => {
           <div className="description">
             <p >{data.description}</p>
           </div>
-          <video controls style={{ width: "100%", height: "300px" }}>
+          <video className='videotag' controls>
             <source src={video} type='video/mp4' />
           </video>
           <div className="video-stats" style={{ display: "flex", justifyContent: "space-evenly", gap: "10px" }}>
