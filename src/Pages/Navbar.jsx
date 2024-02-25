@@ -177,16 +177,16 @@ const Navbar = () => {
   left="100px" // Shift the entire navbar 100px to the right
 >
   <HStack
-    spacing={10}
+    spacing={20}
     alignItems="center" // Align items vertically in the center
   >
     {/* Conditional rendering for icons */}
     {showIcons && (
       <>
-        <Link to="/" style={{ fontSize: "1rem", fontWeight: "500", color: clickedLink === '/' ? mainblue : "black", textDecoration: 'none' }} onClick={() => setClickedLink('/')}><Image style={{ width: "20px", height: "20px" }} src='https://img.icons8.com/ios/50/home-page.png'/></Link>
-        <Link to="/marketplace" style={{ fontSize: "1rem", fontWeight: "500", color: clickedLink === '/marketplace' ? mainblue : "black", textDecoration: 'none' }} onClick={() => setClickedLink('/marketplace')}><Image style={{ width: "20px", height: "20px" }} src='https://img.icons8.com/ios/50/online-shop-card-payment.png'/></Link>
-        <Link to="/videos" style={{ fontSize: "1rem", fontWeight: "500", color: clickedLink === '/videos' ? mainblue : "black", textDecoration: 'none' }} onClick={() => setClickedLink('/videos')}><Image style={{ width: "20px", height: "20px" }} src='https://img.icons8.com/dotty/80/movies-folder--v1.png'/></Link>
-        <Link to="/friends" style={{ fontSize: "1rem", fontWeight: "500", color: clickedLink === '/friends' ? mainblue : "black", textDecoration: 'none' }} onClick={() => setClickedLink('/friends')}><Image style={{ width: "20px", height: "20px" }} src='https://img.icons8.com/ios/50/friends.png'/></Link>
+        <Link to="/" style={{ fontSize: "1rem", fontWeight: "500", color: clickedLink === '/' ? mainblue : "black", textDecoration: 'none' }} onClick={() => setClickedLink('/')}><Image style={{ width: "30px", height: "30px" }} src='https://img.icons8.com/ios/50/home-page.png'/></Link>
+        <Link to="/marketplace" style={{ fontSize: "1rem", fontWeight: "500", color: clickedLink === '/marketplace' ? mainblue : "black", textDecoration: 'none' }} onClick={() => setClickedLink('/marketplace')}><Image style={{ width: "30px", height: "30px" }} src='https://img.icons8.com/ios/50/online-shop-card-payment.png'/></Link>
+        <Link to="/videos" style={{ fontSize: "1rem", fontWeight: "500", color: clickedLink === '/videos' ? mainblue : "black", textDecoration: 'none' }} onClick={() => setClickedLink('/videos')}><Image style={{ width: "30px", height: "30px" }} src='https://img.icons8.com/dotty/80/movies-folder--v1.png'/></Link>
+        <Link to="/friends" style={{ fontSize: "1rem", fontWeight: "500", color: clickedLink === '/friends' ? mainblue : "black", textDecoration: 'none' }} onClick={() => setClickedLink('/friends')}><Image style={{ width: "30px", height: "30px" }} src='https://img.icons8.com/ios/50/friends.png'/></Link>
       </>
     )}
   </HStack>

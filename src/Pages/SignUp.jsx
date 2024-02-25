@@ -15,6 +15,7 @@ import { FormControl, FormLabel } from "@chakra-ui/react";
 import axios from "axios";
 import { useToast } from "@chakra-ui/react";
 import { url } from "../Resources";
+import { Navigate, useNavigate } from "react-router";
 
 // import { useNavigate } from "react-router";
 const SignUp = () => {
@@ -33,6 +34,7 @@ const SignUp = () => {
   const [passwordChange, setPasswordChange] = useState(true);
   const [allFeild, setAllfield] = useState(false);
   const toast = useToast();
+  const navigate = useNavigate();
   const obj = {
     firstName: Fname,
     lastName: Lname,
@@ -73,6 +75,7 @@ const SignUp = () => {
         `${url}/user`,
         obj
       );
+      
     };
 
     e.preventDefault();
@@ -94,13 +97,14 @@ const SignUp = () => {
       console.log("vishnurajkr", allFeild);
       AddUser();
       AccountCreateToast();
-      // setTimeout(() => {
-      //   navigate("/login");
-      // }, 2500);
+      setTimeout(() => {
+        navigate("/login");
+      }, 2500);
     }
     if(allFeild){
       AddUser();
       AccountCreateToast();
+      
     }
     else {
       console.log("ifFalse", allFeild);

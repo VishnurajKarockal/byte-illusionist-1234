@@ -45,10 +45,10 @@ const Friends = () => {
       <Box>
         <Grid 
         templateColumns={{
-          base: "1fr",        // Single column layout on small screens
-          md: "1fr 1fr 1fr", // Four-column layout on medium screens
-          lg: "1fr 1fr 1fr", // Four-column layout on large screens
-          xl: "1fr 1fr 1fr", // Four-column layout on extra-large screens
+          base: "repeat(1,1fr)",        // Single column layout on small screens
+          md: "repeat(1,1fr)", // Four-column layout on medium screens
+          lg: "repeat(2,1fr)", // Four-column layout on large screens
+          xl: "repeat(2,1fr)" // Four-column layout on extra-large screens
         }}
         gap={6}
         
