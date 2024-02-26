@@ -6,13 +6,6 @@ An immersive social networking platform inspired by Facebook. Users enjoy seamle
 ## Live Link
 <a href="https://byte-illusionists-fbclone.netlify.app/">Byte-Illusionists link</a>
 
-## Team Members
-
-- Vishnuraj K R(Team Leader)
-- Kundan Kumar Sooraj
-- Rohit Kumar
-- Sonali Burman
-- Revant Ammamu
 
 ## Table of Contents
 
@@ -57,27 +50,27 @@ We've developed a Facebook clone featuring user login, registration, post, video
 
 ## Project Screenshots 
 # Home(Login)
-<img src="">
+<img src="https://github.com/VishnurajKarockal/byte-illusionist-1234/blob/main/src/assets/home.png">
 <br></br>
 
 # Sign Up
-<img src="">
+<img src="https://github.com/VishnurajKarockal/byte-illusionist-1234/blob/main/src/assets/signup.png">
 <br></br>
 
 # Posts
-<img src="">
+<img src="https://github.com/VishnurajKarockal/byte-illusionist-1234/blob/main/src/assets/posts.png">
 <br></br>
 
 # Videos 
-<img src="">
+<img src="https://github.com/VishnurajKarockal/byte-illusionist-1234/blob/main/src/assets/videos.png">
 <br></br>
 
 # Marketplace
-<img src="">
+<img src="https://github.com/VishnurajKarockal/byte-illusionist-1234/blob/main/src/assets/marketplace.png">
 <br></br>
 
 # Frineds
-<img src="">
+<img src="https://github.com/VishnurajKarockal/byte-illusionist-1234/blob/main/src/assets/frineds.png">
 <br></br>
 
 ## Project Features
@@ -105,4 +98,14 @@ We've developed a Facebook clone featuring user login, registration, post, video
 We extend our heartfelt gratitude to our project mentor, Sir Debobrota Haldar, for providing invaluable guidance and support throughout the development process.
 
 [Visit our GitHub repository](https://github.com/VishnurajKarockal/byte-illusionist-1234) for additional details and project updates.
+
+
+
+## Contributors
+
+- Vishnuraj K R(Team Leader)
+- Kundan Kumar Sooraj
+- Rohit Kumar
+- Sonali Burman
+- Revant Ammamu
 
