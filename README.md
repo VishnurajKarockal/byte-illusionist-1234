@@ -104,7 +104,7 @@ We extend our heartfelt gratitude to our project mentor, Sir Debobrota Haldar, f
 ## Contributors
 
 - Vishnuraj K R(Team Leader)
-- Kundan Kumar Sooraj
+- Kundan Kumar Suraj
 - Rohit Kumar
 - Sonali Burman
 - Revant Ammamu
