@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ProductListing from './ProductListing';
 import "./MarketplaceGrid.css";
+import { url } from '../Resources.js'
+
 
 const MarketplaceGrid = () => {
   const [products, setProducts] = useState([]);
@@ -14,7 +16,7 @@ const MarketplaceGrid = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:8080/products');
+        const response = await fetch(`${url}/products`);
         if (!response.ok) {
           throw new Error('Failed to fetch products');
         }
