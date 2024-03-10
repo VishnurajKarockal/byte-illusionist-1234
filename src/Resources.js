@@ -1,2 +1,2 @@
-export const url = `https://mock-api-template-1-3d9v.onrender.com`;
+export const url = `http://localhost:8080`;
 export const mainblue = "#0866ff";
